@@ -13,7 +13,7 @@ public class ParallelTesting {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.selenium.dev/");
-		Thread.sleep(1000);
+		Thread.sleep(500);
 }	
 	
 	@Test

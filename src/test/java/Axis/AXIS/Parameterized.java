@@ -13,22 +13,21 @@ import org.testng.annotations.Test;
 public class Parameterized {
 	@Test
 	@Parameters("browser")
-	
-	public void Parameterizedtest(String browser) {
-		
-		if(browser.equals("Chrome")) {
-		System.setProperty("Webdriver.chrome.driver",
-		"C:\\Users\\HP\\Documents\\Manipal\\chromedriver-win64\\chromedriver.exe");
-		
-        WebDriver driver = new ChromeDriver();
-		driver.get("https://www.selenium.dev/");
+	public void parameterizedtest(String browser) {
+		if(browser.equals("chrome")) {
+			
+			System.setProperty("Webdriver.chrome.driver",
+			"C:\\Users\\HP\\Documents\\Manipal\\chromedriver-win64\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			driver.get("https://www.selenium.dev/");
 		
 		}else {	
-		System.setProperty("Webdriver.chrome.driver",
-	    "C:\\Users\\HP\\Documents\\Manipal\\edgedriver-win64\\edgedriver.exe");
-		
-		WebDriver driver = new EdgeDriver();
-		driver.get("https://www.selenium.dev/");
-	 }
+			
+			System.setProperty("Webdriver.edge.driver",
+		    "C:\\Users\\HP\\Documents\\Manipal\\edgedriver-win64\\edgedriver.exe");
+			WebDriver driver = new EdgeDriver();
+	        driver.get("https://www.selenium.dev/");
+	 
+		}
    }
 }

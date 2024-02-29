@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Axis.AXIS.HardAssertEg">
+      <class name="Axis.AXIS.Parallel">
         <methods>
-          <include name="testhardassert"/>
+          <include name="parameterizedtest"/>
         </methods>
-      </class> <!-- Axis.AXIS.HardAssertEg -->
+      </class> <!-- Axis.AXIS.Parallel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-   
- <test thread-count="2" name="Test" parallel="methods"> 
-
-<!-- <test thread-count="5" name="Test" parallel="methods"> --> 
+<suite name="Suite">  
+  <test thread-count="2" name="Test"> <!--parallel="classes">-->
   
-  <parameter name="browser" value="">edge</parameter> 
+  <parameter name="browser" value="">edge</parameter>
+  
   
   <!--<groups>
   <define name='SPRINTTEST'>
   <include name='Sanity'/>
   <include name='Regression'/>
   </define>
-  
   <run>
   <include name="">SPRINTTEST</include>
   </run>  
   </groups>  -->
   
     <classes>
-     <!-- <class name="Axis.AXIS.NewTest"/> -->
-      
+    
+     <!-- <class name="Axis.AXIS.NewTest"/> 
      <class name="Axis.AXIS.InvokeChrome"/>
-      <class name="Axis.AXIS.InvokeEdge"/>
-      <class name="Axis.AXIS.ListenerTestClass"/>  
-      <class name="Axis.AXIS.InvokeFirefox"/>     
+      <class name="Axis.AXIS.InvokeEdge"/> -->
+      
+      <!--<class name="Axis.AXIS.ListenerTestClass"/>  
+      <class name="Axis.AXIS.InvokeFirefox"/>      
 
       <class name="Axis.AXIS.DependsOnMethodeg"/> 
-     <class name="Axis.AXIS.Grouping"/> 
-     <!--<class name="Axis.AXIS.Parameterized"/> -->
+     <class name="Axis.AXIS.Grouping"/>             -->
+
      <!-- <class name="Axis.AXIS.ParallelTesting"/> -->
      
       <class name="Axis.AXIS.Parameterized"/> 
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
