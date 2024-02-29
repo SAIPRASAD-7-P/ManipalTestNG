@@ -1,10 +1,12 @@
 package Axis.AXIS;
 
 import org.testng.annotations.Test;
+//import org.testng.TestNGException;
+
 
 public class DependsOnMethodeg {
 	
- @Test(enabled=false)
+ @Test
   public void testcase1() {
 	  System.out.println("Testcase1 excuted successfully");
   }
@@ -21,3 +23,4 @@ public class DependsOnMethodeg {
 	
   }
 }
+

@@ -23,7 +23,7 @@ public class HardAssertEg {
 	Assert.assertEquals(actualTitle, expectedTitle);
 				
 	driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
-				
-	driver.close();						
+	//                           //input[@name='username']
+	//driver.close();						
 	}
 }
